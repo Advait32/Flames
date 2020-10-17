@@ -1,0 +1,67 @@
+<div class=image>
+<div class="container">
+  <div class="try">
+ <div class="title">Form</div>
+<form class="flameform"  [formGroup]="FlameForm" (ngSubmit)="submit()" >
+  <div class="nameform">
+    <div>
+    <label>
+      Name : 
+      <input type="text" formControlName="name" placeholder="Name">
+  
+    </label>
+  </div>
+</div>
+
+
+
+<div class="nameform">
+  <p>
+    <label>
+      Email:
+      <input type="text" formControlName="email"placeholder="Email">
+  
+    </label>
+  </p>
+</div>
+
+<div class= "nameform">
+  <p>
+    Feedback :
+    <span>
+     <input type="radio" value="Great!" formControlName="feedback"> Great!
+     <input type="radio" value="Okay" formControlName="feedback"> Okay
+     <input type="radio" value="Not Good" formControlName="feedback"> Not Good
+    </span>
+  </p>
+</div>
+<div class="nameform">
+  <p>
+    <label>
+      Comment:
+      <input type="text" formControlName="comment">
+    </label>
+  </p>
+</div >
+<div class="subm">
+  <p>
+    <button type="submit" [disabled]="!FlameForm.valid">Submit</button>
+  </p>
+</div>
+</form> 
+</div>
+
+
+
+
+
+
+ <div class="Check">
+  <div class="ele">Name : {{getinfo.name}}</div>
+  <div class="ele">Email : {{getinfo.email}}</div>
+  <div class="ele">Feedback : {{getinfo.feedback}}</div>
+  <div class="ele">Comments : {{getinfo.comment}}</div>
+</div>
+</div>
+
+</div>
