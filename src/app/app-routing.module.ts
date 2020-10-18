@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'form', component: FormComponent },
   { path: 'contact-page', component: ContactPageComponent },
-   {path: '**', component: ContactPageComponent}
+    {path: '**', redirectTo: '/contact-page',pathMatch: 'full'}
 ];
 
 
