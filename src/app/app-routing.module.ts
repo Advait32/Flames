@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/contact-page', pathMatch: 'full' },
   { path: 'header', component: HeaderComponent },
   { path: 'form', component: FormComponent },
-  { path: 'contact-page', component: ContactPageComponent }
+  { path: 'contact-page', component: ContactPageComponent },
+   {path: '**', component: ContactPageComponent}
 ];
 
 
